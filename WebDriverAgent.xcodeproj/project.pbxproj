@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DC2706224903EB003957A7 /* ScreenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC2704224903EA003957A7 /* ScreenHelper.m */; };
+		04DC2707224903EB003957A7 /* ScreenHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DC2705224903EA003957A7 /* ScreenHelper.h */; };
 		1FC3B2E32121ECF600B61EE0 /* FBApplicationProcessProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3B2E12121EC8C00B61EE0 /* FBApplicationProcessProxyTests.m */; };
 		6385F4A7220A40760095BBDB /* XCUIApplicationProcessDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6385F4A5220A40760095BBDB /* XCUIApplicationProcessDelay.m */; };
 		63CCF91221ECE4C700E94ABD /* FBImageIOScaler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CCF91021ECE4C700E94ABD /* FBImageIOScaler.h */; };
@@ -459,6 +461,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04DC2704224903EA003957A7 /* ScreenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenHelper.m; sourceTree = "<group>"; };
+		04DC2705224903EA003957A7 /* ScreenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenHelper.h; sourceTree = "<group>"; };
 		1BA7DD8C206D694B007C7C26 /* XCTElementSetTransformer-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTElementSetTransformer-Protocol.h"; sourceTree = "<group>"; };
 		1FC3B2E12121EC8C00B61EE0 /* FBApplicationProcessProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBApplicationProcessProxyTests.m; sourceTree = "<group>"; };
 		44757A831D42CE8300ECF35E /* XCUIDeviceRotationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCUIDeviceRotationTests.m; sourceTree = "<group>"; };
@@ -1327,6 +1331,8 @@
 				EEC088EB1CB5706D00B65968 /* FBSpringboardApplication.m */,
 				EE9AB7681CAEDF0C008C271F /* FBApplicationProcessProxy.h */,
 				EE9AB7691CAEDF0C008C271F /* FBApplicationProcessProxy.m */,
+				04DC2705224903EA003957A7 /* ScreenHelper.h */,
+				04DC2704224903EA003957A7 /* ScreenHelper.m */,
 				EE158B5D1CBD479000A3E3F0 /* Info.plist */,
 			);
 			name = WebDriverAgentLib;
@@ -1619,6 +1625,7 @@
 				EE9B76AA1CF7A43900275851 /* FBMacros.h in Headers */,
 				EE35AD4A1E3B77D600A02D78 /* XCTestExpectationDelegate-Protocol.h in Headers */,
 				EE35AD641E3B77D600A02D78 /* XCTUIApplicationMonitor-Protocol.h in Headers */,
+				04DC2707224903EB003957A7 /* ScreenHelper.h in Headers */,
 				EEE376411D59F81400ED88DD /* XCElementSnapshot+FBHelpers.h in Headers */,
 				EE35AD591E3B77D600A02D78 /* XCTKVOExpectation.h in Headers */,
 				EEE376431D59F81400ED88DD /* XCUIDevice+FBRotation.h in Headers */,
@@ -1960,6 +1967,7 @@
 				EEE376461D59F81400ED88DD /* XCUIElement+FBUtilities.m in Sources */,
 				EE9B76A91CF7A43900275851 /* FBLogger.m in Sources */,
 				EE158ABB1CBD456F00A3E3F0 /* FBCustomCommands.m in Sources */,
+				04DC2706224903EB003957A7 /* ScreenHelper.m in Sources */,
 				AD6C26991CF2481700F8B5FF /* XCUIDevice+FBHelpers.m in Sources */,
 				EE6B64FE1D0F86EF00E85F5D /* XCTestPrivateSymbols.m in Sources */,
 				AD76723E1D6B7CC000610457 /* XCUIElement+FBTyping.m in Sources */,

@@ -11,6 +11,10 @@
 
 #import "XCUIDevice+FBHelpers.h"
 
+#import "XCUIScreen.h"
+
+#import "ScreenHelper.h"
+
 @implementation FBScreenshotCommands
 
 #pragma mark - <FBCommandHandler>
@@ -29,13 +33,25 @@
 
 + (id<FBResponsePayload>)handleGetScreenshot:(FBRouteRequest *)request
 {
+//  NSError *error;
+//  NSData *screenshotData = [[XCUIDevice sharedDevice] fb_screenshotWithError:&error];
+//  if (nil == screenshotData) {
+//    return FBResponseWithError(error);
+//  }
+//  NSString *screenshot = [screenshotData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+//  return FBResponseWithObject(screenshot);
   NSError *error;
-  NSData *screenshotData = [[XCUIDevice sharedDevice] fb_screenshotWithError:&error];
-  if (nil == screenshotData) {
+  
+  CGRect rect = [ScreenHelper screenRect];
+  NSData * data = (NSData* )[[XCUIScreen mainScreen] screenshotDataForQuality:1 rect:rect error:&error];
+
+  if (data) {
+    NSString *screenshot = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    return FBResponseWithObject(screenshot);
+  }
+  else{
     return FBResponseWithError(error);
   }
-  NSString *screenshot = [screenshotData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-  return FBResponseWithObject(screenshot);
 }
 
 @end
